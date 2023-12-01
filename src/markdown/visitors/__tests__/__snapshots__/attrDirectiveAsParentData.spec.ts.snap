@@ -1,0 +1,7 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#attrDirectiveAsParentData textDirective should patch parent data 1`] = `
+"root
+  heading{depth=1,id="h1"}
+    text{value="一级标题"}"
+`;

@@ -1,0 +1,212 @@
+# 页面设置
+[page.size]
+# A4
+width = "210mm"
+height = "297mm"
+orientation = "portrait"
+
+# 页边距
+[page.margin]
+top = "3.5cm"
+bottom = "3.5cm"
+right = "2.8cm"
+left = "2.8cm"
+
+## 文档网格
+[grid]
+type = "lines"
+
+# 文档样式
+[style.document.run]
+size = "14pt"
+font = { eastAsia = "SimSun", ascii = "Times New Roman" }
+
+[style.normal]
+name = "Normal"
+run.size = "16pt"
+run.font = { eastAsia = "方正仿宋_GBK", ascii = "Times New Roman" }
+paragraph.alignment = "both"
+paragraph.widowControl = false
+
+[style.normalIndent]
+basedOn = "normal"
+name = "Normal Indent"
+paragraph.indent.firstLineChars = 2
+
+
+[style.title]
+basedOn = "normal"
+name = "Title"
+
+run.font.eastAsia = "方正小标宋_GBK"
+run.bold = true
+run.size = "22pt"
+
+paragraph.alignment = "center"
+paragraph.outlineLevel = 0
+paragraph.spacing.before = "12pt"
+paragraph.spacing.after = "3pt"
+
+[style.heading1]
+basedOn = "normal"
+name = "Heading 1"
+
+run.font.eastAsia = "方正黑体_GBK"
+run.bold = true
+run.size = "22pt"
+
+paragraph.outlineLevel = 0
+paragraph.keepNext = true
+paragraph.keepLines = true
+paragraph.spacing.before = "17pt"
+paragraph.spacing.after = "16.5pt"
+paragraph.spacing.lineRule = "auto"
+paragraph.spacing.line = 2.41
+
+[style.heading2]
+basedOn = "normal"
+name = "Heading 2"
+run.font.eastAsia = "方正楷体_GBK"
+run.bold = true
+run.size = "16pt"
+
+paragraph.outlineLevel = 1
+paragraph.keepNext = true
+paragraph.keepLines = true
+paragraph.spacing.before = "13pt"
+paragraph.spacing.after = "13pt"
+paragraph.spacing.lineRule = "auto"
+paragraph.spacing.line = 1.73
+
+[style.heading3]
+basedOn = "normal"
+name = "Heading 3"
+run.bold = true
+run.size = "16pt"
+
+paragraph.outlineLevel = 2
+paragraph.keepNext = true
+paragraph.keepLines = true
+paragraph.spacing.before = "13pt"
+paragraph.spacing.after = "13pt"
+paragraph.spacing.lineRule = "auto"
+paragraph.spacing.line = 1.73
+
+[style.heading4]
+basedOn = "normal"
+name = "Heading 4"
+run.bold = true
+paragraph.outlineLevel = 3
+paragraph.spacing.lineRule = "auto"
+paragraph.spacing.line = 1.73
+
+
+[style.heading5]
+basedOn = "normal"
+name = "Heading 5"
+run.bold = true
+paragraph.outlineLevel = 4
+paragraph.spacing.lineRule = "auto"
+paragraph.spacing.line = 1.73
+
+[style.caption]
+basedOn = "normal"
+name = "Caption"
+run.bold = true
+paragraph.alignment = "center"
+
+[style.hyperlink]
+name = "Hyperlink"
+run.color = "#1068bf"
+
+[style.codeBlock]
+basedOn = "normal"
+name = "Code Block"
+run.size = "12pt"
+run.font.ascii = "Courier"
+run.snapToGrid = false
+paragraph.alignment = "left"
+paragraph.indent.beforeChars = 1
+paragraph.indent.afterChars = 1
+paragraph.spacing.before = 0
+paragraph.spacing.after = 0
+paragraph.spacing.lineRule = "auto"
+paragraph.spacing.line = 1.12
+
+# 表格样式
+[style.normalTable]
+table.layout = "justified"
+table.cell.indent = { type = "dxa", size = 0 }
+table.cell.margins = { type = "dxa", top = 108, right = 108, bottom = 108, left = 108 }
+table.cell.basedOn = "normal"
+table.cell.run.size = "12pt"
+# 表头样式
+table.style.firstRow.cell.basedOn = "normal"
+table.style.firstRow.cell.run.size = "14pt"
+table.style.firstRow.cell.shading.type = "clear"
+table.style.firstRow.cell.shading.color = "auto"
+table.style.firstRow.cell.shading.fill = "F1F1F1"
+
+# 标题编号
+[[numbering.heading.levels]]
+text = "%1、"
+format = "chineseCounting"
+suffix = "nothing"
+alignment = "left"
+style.paragraph.indent.left = 0
+style.paragraph.indent.firstLine = 0
+
+[[numbering.heading.levels]]
+text = "（%2）"
+format = "chineseCounting"
+alignment = "left"
+suffix = "nothing"
+style.paragraph.indent.left = 0
+style.paragraph.indent.firstLineChars = 1
+
+[[numbering.heading.levels]]
+text = "%3．"
+format = "decimal"
+suffix = "nothing"
+alignment = "left"
+style.paragraph.indent.left = 0
+style.paragraph.indent.firstLineChars = 1
+
+[[numbering.heading.levels]]
+text = "(%4) "
+format = "decimal"
+suffix = "nothing"
+alignment = "left"
+style.paragraph.indent.left = 0
+style.paragraph.indent.firstLineChars = 2
+
+[[numbering.heading.levels]]
+text = "%5）"
+format = "decimal"
+suffix = "nothing"
+alignment = "left"
+style.paragraph.indent.left = 0
+style.paragraph.indent.firstLineChars = 1
+
+# 列表编号
+[[numbering.list.levels]]
+text = "%1）"
+format = "decimal"
+suffix = "nothing"
+alignment = "left"
+style.paragraph.indent.left = 0
+
+[[numbering.list.levels]]
+text = "%2）"
+format = "lowerLetter"
+suffix = "nothing"
+alignment = "left"
+style.paragraph.indent.leftChars = 1
+
+[[numbering.list.levels]]
+text = "%3）"
+format = "lowerRoman"
+suffix = "nothing"
+alignment = "left"
+style.paragraph.indent.leftChars = 2
+
