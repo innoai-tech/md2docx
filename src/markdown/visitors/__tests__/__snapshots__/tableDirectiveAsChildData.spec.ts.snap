@@ -1,0 +1,19 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#tableDirectiveAsChildData textDirective should patch parent data 1`] = `
+"root
+  table{align=[null,null,null],orientation="portrait"}
+    tableRow
+      tableCell{colspan="2"}
+        text{value="x"}
+      tableCell
+      tableCell
+        text{value="y"}
+    tableRow
+      tableCell
+        text{value="1"}
+      tableCell
+        text{value="2"}
+      tableCell
+        text{value="3"}"
+`;

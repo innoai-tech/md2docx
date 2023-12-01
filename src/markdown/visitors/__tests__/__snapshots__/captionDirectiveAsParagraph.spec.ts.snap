@@ -1,0 +1,13 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#captionDirectiveAsParagraph leafDirective should convert as paragraph 1`] = `
+"root
+  paragraph{caption-type="Table",id="table-x"}
+    text{value="我是表格"}"
+`;
+
+exports[`#captionDirectiveAsParagraph textDirective should patch parent data 1`] = `
+"root
+  paragraph{caption-type="Table",id="table-x"}
+    text{value="我是表格"}"
+`;

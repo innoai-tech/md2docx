@@ -1,0 +1,11 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#embedDirective leafDirective should replaced with embeded 1`] = `
+"root
+  heading{depth=1}
+    text{value="一级标题"}
+  heading{depth=2}
+    text{value="标题"}
+  paragraph
+    text{value="内容内容"}"
+`;
